@@ -1,0 +1,3 @@
+#Sandwhich Bot
+## Intro
+The Sandwhich Bot was the culmination of my computer science robotics controll class and was a project I worked on with a team of 3 to develop a robot that can assemble sandwiches. For this project I developed all of the forward kinematics and decision making code. I was able to simplify a 9 DOF robotic arm so it was better suited for our application. Learning all of the derivations and logic for this project was very interesting and it was my first time truly collaboratively working on code with others.
