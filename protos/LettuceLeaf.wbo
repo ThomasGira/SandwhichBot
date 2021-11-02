@@ -1,0 +1,30 @@
+#VRML_OBJ R2021a utf8
+DEF Lettuce_Leaf Solid {
+  translation -1.41 0.814894 4.27
+  rotation -0.34775504302476096 0.9373622431010901 -0.02045617900145582 -7.393544242855284e-17
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.3 1 0.3
+        roughness 0.9
+        metalness 0.2
+        IBLStrength 0
+      }
+      geometry DEF ketchup_cylinder Cylinder {
+        height 0.003
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Shape {
+    geometry Box {
+      size 0.08 0.04 0.08
+    }
+  }
+  physics Physics {
+  }
+  recognitionColors [
+    0.3 1 0.3
+  ]
+}

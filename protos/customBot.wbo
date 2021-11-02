@@ -1,0 +1,5 @@
+#VRML_OBJ R2021a utf8
+IprHd6m90 {
+  translation -1 0.74 4.5
+  controller "robot_arm"
+}

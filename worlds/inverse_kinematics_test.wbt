@@ -1,0 +1,86 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  basicTimeStep 16
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  fieldOfView 0.85
+  orientation 0.08649413367846685 -0.9397737933937628 -0.3306720158850893 3.187351383436887
+  position 0.8024946893357575 6.155898986247828 -3.4843383081373807
+  follow "robot:IRB 4600/40:solid:solid:solid:solid:solid:solid:pen"
+  followType "Pan and Tilt Shot"
+}
+TexturedBackground {
+  texture "empty_office"
+}
+PointLight {
+  attenuation 0 0 1
+  intensity 10
+  location -4 6 5
+  castShadows TRUE
+}
+PointLight {
+  attenuation 0 0 1
+  intensity 10
+  location 5 6 5
+}
+Floor {
+  translation 0 0 4.3
+  name "floor(1)"
+  size 20 16.4
+  tileSize 1 1
+  appearance ThreadMetalPlate {
+  }
+}
+Table {
+  translation -1 0 4.84
+  size 3 0.74 3
+  feetPadding 0.05
+  frameThickness 0.1
+  trayAppearance OldSteel {
+    colorOverride 0.933333 0.933333 0.92549
+  }
+  legAppearance GalvanizedMetal {
+  }
+}
+BeerBottle {
+  translation -0.60929 0.82 4.87239
+  rotation 1 0 0 4.692820414042842e-06
+}
+WoodenBox {
+  translation -1 0.84 4
+  size 0.6 0.2 0.6
+}
+SandwichBot2 {
+  translation -1 0.74 4.5
+  controller "robot_arm"
+  supervisor TRUE
+  sensorsSlot [
+    Camera {
+      translation 0 2 0
+      rotation 1 0 0 -1.5707996938995747
+      recognitionColors [
+        0 0 0
+      ]
+      fieldOfView 1.5
+      width 200
+      height 200
+      recognition DEF rec Recognition {
+        segmentation TRUE
+      }
+    }
+  ]
+}
+Fork {
+  translation -1.5599799999999944 0.7411535708169149 4.223010000008846
+  rotation -0.9998893202978859 0.014877649459046783 5.196927435718403e-05 0.0069869660146226415
+  color 1 1 1
+}
+JamJar {
+  translation -1.05 0.9394509499999997 4.1
+  rotation -8.611646256298379e-16 1 4.381812839220254e-16 -0.151963743657997
+}
+PingPongBall {
+  translation 4.0979428664201984 0.01999779089236457 2.457626698002256
+  rotation -0.06036927212791829 0.6875306303516933 0.7236416124788215 2.918899286000323
+}
